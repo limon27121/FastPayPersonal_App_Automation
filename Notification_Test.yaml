@@ -1,0 +1,26 @@
+appId: com.fastpay.business
+---
+# 1️⃣ Select Environment
+- tapOn: "Fastpay Staging"
+- waitForAnimationToEnd
+
+# 2️⃣ Login Flow (Reusable)
+- runFlow: LogIn.yaml
+- 
+
+# 4️⃣ Validate Transactions Section
+- assertVisible: Transactions
+- tapOn: Transactions
+
+- assertVisible:
+    id: searchBar
+- assertVisible: "Mark all as read"
+- assertVisible:
+    id: mainRootView
+
+# 5️⃣ Promotions Section (Optional)
+# Uncomment if you want to test promotions
+# - assertVisible: Promotions
+# - tapOn: Promotions
+# - assertVisible:
+#     id: notificationRecycler

@@ -1,0 +1,20 @@
+appId: com.fastpay.business
+---
+# - launchApp:
+# - tapOn: Fastpay Staging
+# - waitForAnimationToEnd
+# user name and password field
+- tapOn: XXX-XXX-XXXX
+- inputText: ${User}
+- tapOn: Back
+- tapOn: Enter your password
+- inputText: ${Password}
+- tapOn: Back
+
+# Log In button
+- tapOn: LOGIN
+# Pin Page
+# - tapOn:
+#     id: "pinField1"
+# - inputText: "123456" # Combined to avoid the timeout you had earlier
+
