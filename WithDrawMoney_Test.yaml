@@ -9,5 +9,31 @@ appId: com.fastpay.business
 
 - tapOn:
     id: itemHomeWithdraw
-
+- assertVisible: Withdraw Money
+- assertVisible:
+    id: notificationBtn
+- assertVisible:
+    id: appLogo
+- assertVisible:
+    id: mainRootView
+- tapOn: XXX-XXX-XXXX
+- inputText: "1000000077"
+- tapOn:
+    id: amountLayout
+- inputText: ${Amount}
+- assertVisible: CASH-OUT
+- tapOn: CASH-OUT
+- assertVisible:
+    id: rootMain
+- assertVisible: CONFIRM
+- tapOn: CONFIRM
+- tapOn:
+    id: pinField1
+- inputText: ${Pin}
+- assertVisible:
+    id: dialogCardView
+- tapOn:
+    id: viewInvoiceLayout
+- assertVisible:
+    id: invoiceLayout
 

@@ -1,4 +1,6 @@
 appId: com.fastpay.business
+tags:
+  - smoke
 ---
 # - launchApp:
 - tapOn: Fastpay Staging

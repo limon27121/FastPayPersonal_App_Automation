@@ -6,8 +6,11 @@ appId: com.fastpay.business
 
 # 2️⃣ Login Flow (Reusable)
 - runFlow: LogIn.yaml
-- 
-
+- waitForAnimationToEnd
+- tapOn: Send
+- waitForAnimationToEnd
+- tapOn:
+    id: notificationBtnLayout
 # 4️⃣ Validate Transactions Section
 - assertVisible: Transactions
 - tapOn: Transactions
@@ -20,7 +23,8 @@ appId: com.fastpay.business
 
 # 5️⃣ Promotions Section (Optional)
 # Uncomment if you want to test promotions
-# - assertVisible: Promotions
-# - tapOn: Promotions
-# - assertVisible:
-#     id: notificationRecycler
+- assertVisible: Promotions
+- tapOn: Promotions
+- assertVisible:
+    id: notificationRecycler
+- pressKey: home
