@@ -2,6 +2,8 @@ appId: com.fastpay.business
 tags:
   - smoke
 ---
+- clearState
+
 # - launchApp:
 - tapOn: Fastpay Staging
 - waitForAnimationToEnd
@@ -25,3 +27,5 @@ tags:
     id: biometricLogin
 - assertVisible: Register now
 - runFlow: LogIn.yaml
+- pressKey: home
+- stopApp

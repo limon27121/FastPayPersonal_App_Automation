@@ -5,6 +5,7 @@ appId: com.fastpay.business
 # - waitForAnimationToEnd
 # user name and password field
 - tapOn: XXX-XXX-XXXX
+- eraseText
 - inputText: ${User}
 - tapOn: Back
 - tapOn: Enter your password
