@@ -1,0 +1,4 @@
+appId: com.fastpay.business
+---
+- tapOn: Fastpay Staging
+- waitForAnimationToEnd
