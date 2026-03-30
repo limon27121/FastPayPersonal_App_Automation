@@ -1,0 +1,37 @@
+appId: com.fastpay.business
+---
+- tapOn: Fastpay Staging
+- waitForAnimationToEnd
+- runFlow: LogIn.yaml
+- waitForAnimationToEnd
+- tapOn:
+    id: itemSend
+- waitForAnimationToEnd
+
+- assertVisible:
+    id: userImage
+- tapOn:
+    id: parent_view
+- assertVisible:
+    id: amountLayout
+- inputText: ${Amount}
+- assertVisible: SEND
+- tapOn:
+    id: sendBtn
+- assertVisible:
+    id: rootMain
+- assertVisible: CONFIRM
+- tapOn:
+    id: confirmBtn
+- assertVisible:
+    id: customEditTextView
+- tapOn:
+    id: pinField1
+- inputText: ${Pin}
+- assertVisible:
+    id: dialogCardView
+- assertVisible: VIEW INVOICE
+- tapOn:
+    id: viewInvoiceLayout
+- assertVisible:
+    id: invoiceLayout
