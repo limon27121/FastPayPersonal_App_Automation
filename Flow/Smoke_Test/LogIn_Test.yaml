@@ -1,0 +1,19 @@
+appId: com.fastpay.business
+---
+- assertVisible:
+    id: fastpayLogo
+- assertVisible:
+    id: firstLangLayout
+- assertVisible: XXX-XXX-XXXX
+- assertVisible:
+    id: passwordLayout
+- assertVisible:
+    id: customEditTextEndImageView
+    index: 1
+- assertVisible:
+    id: forgotPassword
+- assertVisible: LOGIN
+- assertVisible:
+    id: biometricLogin
+- assertVisible: Register now
+- runFlow: LogIn.yaml

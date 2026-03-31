@@ -1,0 +1,51 @@
+appId: com.fastpay.business
+---
+# Page Header Test
+- assertVisible:
+    id: notificationBtn
+
+# Account Detalis Test
+- assertVisible:
+    id: flAccView
+- assertVisible:
+    id: clAccountInfo
+- assertVisible:
+    id: flAccView
+
+#MyQR code Test
+- assertVisible:
+    id: myQrBtn
+- tapOn:
+    id: myQrBtn
+- assertVisible:
+    id: transactionDestination
+- tapOn:
+    id: dialogCloseIcon
+
+#  Main Feature Test
+- assertVisible: Deposit
+- assertVisible: Withdraw
+- assertVisible: Send
+- assertVisible: Request
+
+# Home Banner Test
+- assertVisible:
+    id: imageSliderImage
+
+#Service Page List Test
+- assertVisible:
+    id: rvServiceList
+
+# Bottom List Test
+- assertVisible:
+    id: bottomMenu
+
+# QR Code Test
+
+- tapOn:
+    id: menuQRScan
+
+- assertVisible: UPLOAD QR
+
+- tapOn:
+    id: ivClose

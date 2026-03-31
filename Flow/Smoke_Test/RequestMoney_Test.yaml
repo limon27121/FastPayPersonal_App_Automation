@@ -1,0 +1,36 @@
+appId: com.fastpay.business
+---
+- waitForAnimationToEnd
+- tapOn:
+    id: itemRequest
+- tapOn: Request History
+- assertVisible:
+    id: mainRootView
+- tapOn:
+    text: Request Money
+    index: 1
+- assertVisible:
+    id: parent_view
+- tapOn:
+    id: parent_view
+- assertVisible:
+    id: amountLayout
+- tapOn:
+    id: amountLayout
+- inputText: ${Amount}
+- assertVisible: REQUEST
+- tapOn: REQUEST
+- assertVisible:
+    id: rootMain
+- tapOn: CONFIRM
+- tapOn:
+    id: pinField1
+- inputText: ${Pin}
+- assertVisible:
+    id: dialogCardView
+- tapOn:
+    id: viewStatusLayout
+- assertVisible:
+    id: mainRootView
+- tapOn:
+    id: appLogo

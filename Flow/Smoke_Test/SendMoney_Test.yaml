@@ -1,9 +1,5 @@
 appId: com.fastpay.business
 ---
-- tapOn: Fastpay Staging
-- waitForAnimationToEnd
-- runFlow: LogIn.yaml
-- waitForAnimationToEnd
 - tapOn:
     id: itemSend
 - waitForAnimationToEnd
@@ -35,3 +31,5 @@ appId: com.fastpay.business
     id: viewInvoiceLayout
 - assertVisible:
     id: invoiceLayout
+- tapOn:
+    id: appLogo

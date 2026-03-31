@@ -1,0 +1,12 @@
+appId: com.fastpay.business
+---
+- tapOn: Fastpay Staging
+- waitForAnimationToEnd
+
+- runFlow: LogIn_Test.yaml
+- runFlow: HomePage_Test.yaml
+- runFlow: WithdrawMoney_Test.yaml
+- runFlow: SendMoney_Test.yaml
+- runFlow: RequestMoney_Test.yaml
+- pressKey: home
+- stopApp
