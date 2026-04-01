@@ -37,3 +37,5 @@ tags:
     id: mainRootView
 - tapOn:
     id: appLogo
+- pressKey: home
+- stopApp

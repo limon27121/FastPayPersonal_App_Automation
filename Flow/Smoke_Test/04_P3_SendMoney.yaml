@@ -3,9 +3,6 @@ tags:
   - P3
   - smoke
 ---
-# - tapOn: Fastpay Staging
-# - waitForAnimationToEnd
-# - runFlow: LogIn.yaml
 - tapOn:
     id: itemSend
 - waitForAnimationToEnd
@@ -39,4 +36,3 @@ tags:
     id: invoiceLayout
 - tapOn:
     id: appLogo
-- stopApp
