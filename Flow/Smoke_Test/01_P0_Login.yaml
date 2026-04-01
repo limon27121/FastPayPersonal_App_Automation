@@ -1,0 +1,42 @@
+appId: com.fastpay.business
+tags:
+  - P0
+  - smoke
+---
+- tapOn: Fastpay Staging
+- waitForAnimationToEnd
+
+- assertVisible:
+    id: fastpayLogo
+- assertVisible:
+    id: firstLangLayout
+- assertVisible: XXX-XXX-XXXX
+- assertVisible:
+    id: passwordLayout
+- assertVisible:
+    id: customEditTextEndImageView
+    index: 1
+- assertVisible:
+    id: forgotPassword
+- assertVisible: LOGIN
+- assertVisible:
+    id: biometricLogin
+- assertVisible: Register now
+# - runFlow: LogIn.yaml
+
+# LogIn to App
+
+- tapOn: XXX-XXX-XXXX
+- eraseText
+- inputText: ${User}
+- tapOn: Back
+- tapOn: Enter your password
+- inputText: ${Password}
+- tapOn: Back
+
+# Log In button
+- tapOn: LOGIN
+# Pin Page
+# - tapOn:
+#     id: "pinField1"
+# - inputText: "123456" # Combined to avoid the timeout you had earlier

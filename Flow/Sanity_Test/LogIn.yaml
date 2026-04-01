@@ -1,5 +1,6 @@
 appId: com.fastpay.business
 ---
+
 - tapOn: XXX-XXX-XXXX
 - eraseText
 - inputText: ${User}

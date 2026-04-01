@@ -1,5 +1,11 @@
 appId: com.fastpay.business
+tags:
+  - P3
+  - smoke
 ---
+# - tapOn: Fastpay Staging
+# - waitForAnimationToEnd
+# - runFlow: LogIn.yaml
 - tapOn:
     id: itemSend
 - waitForAnimationToEnd
@@ -33,3 +39,4 @@ appId: com.fastpay.business
     id: invoiceLayout
 - tapOn:
     id: appLogo
+- stopApp

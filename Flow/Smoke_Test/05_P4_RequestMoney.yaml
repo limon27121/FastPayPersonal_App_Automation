@@ -1,8 +1,8 @@
 appId: com.fastpay.business
+tags:
+  - P4
+  - smoke
 ---
-- tapOn: Fastpay Staging
-- waitForAnimationToEnd
-- runFlow: LogIn.yaml
 - waitForAnimationToEnd
 - tapOn:
     id: itemRequest
@@ -35,3 +35,5 @@ appId: com.fastpay.business
     id: viewStatusLayout
 - assertVisible:
     id: mainRootView
+- tapOn:
+    id: appLogo
