@@ -13,7 +13,8 @@ tags:
     id: appLogo
 - assertVisible:
     id: mainRootView
-- tapOn: XXX-XXX-XXXX
+- tapOn:
+    id: mobileNumberEditText
 - inputText: "1000000077"
 - tapOn:
     id: amountLayout
