@@ -10,7 +10,9 @@ tags:
     id: fastpayLogo
 - assertVisible:
     id: firstLangLayout
-- assertVisible: XXX-XXX-XXXX
+- assertVisible:
+    id: customEditTextView
+    index: 1
 - assertVisible:
     id: passwordLayout
 - assertVisible:
@@ -22,11 +24,12 @@ tags:
 - assertVisible:
     id: biometricLogin
 - assertVisible: Register now
-# - runFlow: LogIn.yaml
 
 # LogIn to App
 
-- tapOn: XXX-XXX-XXXX
+- tapOn:
+    id: customEditTextView
+    index: 1
 - eraseText
 - inputText: ${User}
 - tapOn: Back

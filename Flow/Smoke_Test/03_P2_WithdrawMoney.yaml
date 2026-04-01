@@ -3,6 +3,7 @@ tags:
   - P2
   - smoke
 ---
+# goto withdraw feature
 - tapOn:
     id: itemHomeWithdraw
 - assertVisible: Withdraw Money

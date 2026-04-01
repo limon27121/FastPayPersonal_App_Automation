@@ -45,11 +45,8 @@ tags:
     id: bottomMenu
 
 # QR Code Test
-
 - tapOn:
     id: menuQRScan
-
 - assertVisible: UPLOAD QR
-
 - tapOn:
     id: ivClose
